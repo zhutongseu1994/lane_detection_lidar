@@ -1,0 +1,73 @@
+radar_num: 1
+leafsize: 0.1
+leftbox:
+  xmin: -30
+  ymin: -30
+  zmin: -0.3
+  xmax: 30
+  ymax: -4
+  zmax: 2
+rightbox:
+  xmin: -30
+  ymin: -4
+  zmin: 0.30
+  xmax: 30
+  ymax: 30
+  zmax: 2.0
+midlebox:
+  xmin: -30
+  ymin: -4
+  zmin: -0.30
+  xmax: 30
+  ymax: 4.0
+  zmax: 3.0
+frontbox:
+  xmin: 30
+  ymin: -30
+  zmin: 0.3
+  xmax: 100
+  ymax: 30
+  zmax: 2.0
+planebox:
+  xmin: 30
+  ymin: -30
+  zmin: 0.3
+  xmax: 100
+  ymax: 30
+  zmax: 2.0
+segparam:
+  type: 2
+  maxiter: 100
+  threshold: 0.05
+  max_w_s: 0.05
+  slope: 0.7
+  max_d: 0.1
+  initial_d: 0.01
+  cell_s: 0.01
+  base: 2.0
+  exponential: true
+filter:
+  raduis: 0.5
+  minneighbor: 6
+cluster:
+  type: 1
+eucliden:
+  minsize: 10
+  maxsize: 1000
+  rounds: 3
+  radius0: 0.08
+  distance0: 0.08
+  radius1: 0.1
+  distance1: 0.1
+  radius2: 0.2
+  distance2: 0.2
+dbsacn:
+  aroundnum: 4
+  minnum: 10
+  radius: 0.2
+regiongrow:
+  rg_min_s: 100
+  rg_max_s: 10000
+  rg_kn: 20
+  rg_smoothness: 3.0
+  rg_curvature: 1.0

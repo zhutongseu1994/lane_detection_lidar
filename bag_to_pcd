@@ -1,0 +1,13 @@
+
+1. 查看某个.bag的数据信息(其中*为.bag文件名)
+rosbag info *.bag
+
+
+2.利用bag_to_pcd, 代码如下(亲测有效):
+rosrun pcl_ros bag_to_pcd <*.bag> <topic> <output_directory>
+
+
+
+rosrun pcl_ros bag_to_pcd 2020-05-11-xiaopo.bag sensor_msgs/PointCloud2 ./
+
+

@@ -1,0 +1,9 @@
+int32  id
+Center center
+float32 width
+float32 height
+float32 depth
+float32 speedx
+float32 speedy
+float32 k
+Rotate  rotate

@@ -1,0 +1,11 @@
+#/bin/sh
+while :
+do
+robag_running=$(ps -ef | grep "rosbag play" | grep -v "grep")
+if [ "$robag_running" ];then
+	echo "robag_running is running!"
+else
+	rosbag play  $1
+fi
+sleep 1
+done
